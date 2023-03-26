@@ -1,2 +1,2 @@
 # Chess-Emporium
-A website built using  web technologies such as HTML, CSS, and JavaScript
+Chess Emporium is a website for chess enthusiasts to purchase high-quality chess equipment, including boards, pieces, clocks, and more.In addition to our selection of products, we also offer a variety of quizzes to help you improve your chess knowledge and skills.  Our website is built using modern web technologies such as HTML, CSS, and JavaScript, and is designed to be user-friendly
