@@ -1,0 +1,635 @@
+html {
+  font-family: "Courier New", Courier, monospace;
+}
+.present {
+  text-align: center;
+  margin-top: 20vh;
+}
+.bodyIntro {
+  position: fixed;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(255, 255, 255);
+  transition: 2s;
+}
+.bodyLogo {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.bodyLogo1 {
+  font-size: 50px;
+  font-family: "Lobster", cursive;
+}
+.mylogo-header {
+  position: absolute;
+  font-size: 1000px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #000000;
+}
+.myLogo {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  display: inline-block;
+  opacity: 1;
+}
+.myLogo.active {
+  opacity: 1;
+  transition: ease-in-out 0.5s;
+}
+.myLogo.fade {
+  opacity: 0;
+  transition: ease-in-out 0.5s;
+}
+.mySpinner {
+  font-weight: 100;
+}
+/* ------------------------------------------------------------Navigation Bar-------------------------------------------------------------- */
+.navbar {
+  background-color: #412902;
+  overflow: hidden;
+  display: flex;
+  top: 0;
+  cursor: pointer;
+}
+.logo {
+  width: 50px;
+  float: left;
+  margin-left: 100px;
+  margin-right: -200px;
+}
+.logo1 {
+  color: #f2d7ab;
+  letter-spacing: 3px;
+  font-size: 40px;
+  font-family: lobster;
+  font-weight: bold;
+  margin-top: 25px;
+  background-image: url("Chess logo.jpg");
+}
+.navbar a {
+  float: left;
+  color: #f2d7ab;
+  font-size: 17px;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 14px 16px;
+}
+.navbar a:hover {
+  background-color: #f2d7ab;
+  color: #412902;
+}
+.navbar a.active {
+  background-color: #f2d7ab;
+  color: #412902;
+}
+.navbar ul {
+  float: right;
+  margin-right: 20px;
+}
+.navbar ul li {
+  display: inline-block;
+  line-height: 1px;
+  margin: -10px 5px;
+}
+/* ------------------------------------------------------------Navigation Bar End-------------------------------------------------------------- */
+body {
+  background-color: #fff;
+  color: #777;
+  font: normal 15px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+p {
+  line-height: 20px;
+  margin-bottom: 20px;
+}
+h1 {
+  font-family: "Crete Round", serif;
+  font-weight: bold;
+  color: #412902;
+}
+h2 {
+  font-weight: 300;
+  color: #412902;
+  text-transform: uppercase;
+}
+h3 {
+  color: #412902;
+  text-transform: uppercase;
+  text-align: center;
+}
+h4 {
+  color: #412902;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+h5 {
+  color: #412902;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+a {
+  text-decoration: none;
+  color: #412902;
+}
+a:hover {
+  color: #f2d7ab;
+}
+strong {
+  font-weight: bold;
+}
+small {
+  font-size: 13px;
+  color: #f2d7ab;
+  font-style: italic;
+}
+.clear {
+  clear: both;
+}
+.wrapper {
+  margin: 0 auto;
+  padding: 0 10px;
+  width: 940px;
+}
+#hero-image {
+  height: 580px;
+  padding-top: 1px;
+  background: #e8eced url("../images/hero.jpg") no-repeat center;
+}
+#hero-image h2 {
+  margin: 180px 0 40px 0;
+}
+.button-1 {
+  display: block;
+  text-align: center;
+  background: #412902;
+  border-radius: 3px;
+  color: #f2d7ab;
+  width: 180px;
+  height: 50px;
+  font-size: 20px;
+  line-height: 50px;
+  margin: 0 auto;
+}
+.button-1:hover {
+  background-color: #f2d7ab;
+  color: #412902;
+  text-decoration: none;
+}
+.photos {
+  border: 15px solid #412902;
+}
+.chess-image {
+  align-self: center;
+  align-items: center;
+  margin-left: 30%;
+  margin-bottom: 5%;
+  border: 5px #412902;
+}
+#primary-content {
+  background-color: #f8fafa;
+  padding: 60px 0;
+  text-align: center;
+}
+#primary-content h3 {
+  display: block;
+  margin: 0 auto 20px auto;
+  width: 400px;
+  border-bottom: 1px solid #f2d7ab;
+  padding: 0 0 20px 0;
+}
+#primary-content a img {
+  margin: 20px 0;
+}
+article h4 {
+  border-bottom: 1px solid #f2d7ab;
+  padding-bottom: 20px;
+}
+#cta {
+  padding: 60px 0;
+  text-align: center;
+}
+#cta h3 {
+  display: block;
+  margin: 0 auto 20px auto;
+  width: 400px;
+  border-bottom: 1px solid #f2d7ab;
+  padding: 0 0 20px 0;
+}
+.button-2 {
+  display: block;
+  margin: 0 auto;
+  background: #412902;
+  border-radius: 3px;
+  color: #f2d7ab;
+  width: 180px;
+  height: 50px;
+  font-size: 20px;
+  line-height: 50px;
+  padding-left: 28px;
+}
+.button-2:hover {
+  background-color: #f2d7ab;
+  color: #412902;
+  text-decoration: none;
+}
+.container {
+  margin-bottom: 150px;
+}
+/*buy products*/
+.container1 {
+  margin: auto;
+  margin-top: 20px;
+}
+.btn-primary {
+  background-color: #412902;
+  color: #f2d7ab;
+  border: #f2d7ab;
+}
+.btn-primary:hover {
+  background-color: #f2d7ab;
+  color: #412902;
+  border: 2px solid #412902;
+  text-decoration: none;
+}
+.col-md-,
+.col-lg-4 {
+  margin-bottom: 20px;
+}
+.sty {
+  font-size: 18px !important;
+  color: black !important;
+}
+.num {
+  width: 80px;
+  height: 30px;
+  border: 3px solid black;
+  border-radius: 5px;
+  font-size: 18px;
+  padding: 5px;
+}
+.uk-border-circle {
+  width: 100px !important;
+  height: 100px !important;
+}
+.fa-cart-arrow-down {
+  color: white;
+  font-size: 50px;
+  cursor: pointer;
+  padding-left: 20px;
+}
+.card-img-top {
+  height: 200px;
+}
+.card-body {
+  height: 185px;
+  background-color: #f2d7ab;
+  padding: 2%;
+  text-align: center;
+  align-items: center;
+  border: 1px solid #412902;
+}
+.btn btn-primary {
+  background-color: #412902;
+  padding: 4%;
+  color: #f2d7ab;
+  text-decoration: none;
+}
+/*Back to top */
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: 1px solid #412902;
+  outline: none;
+  background-color: #f2d7ab;
+  color: #412902;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 18px;
+}
+#myBtn:hover {
+  background-color: #555;
+}
+/* --------------------------------------------------------Query Form------------------------------------------------------------ */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+#content {
+  position: relative;
+  width: 50%;
+  margin-top: 30px;
+  left: 25%;
+  margin-bottom: 70px;
+  z-index: 1;
+  background-color: #f2d7ab;
+  border-radius: 20px;
+}
+#heading {
+  color: #412902;
+  font-size: 40px;
+  text-align: center;
+  display: grid;
+}
+.queryForm {
+  width: 30%;
+  color: #412902;
+  margin: auto;
+  margin-top: 15px;
+  display: flow-root;
+}
+.queryRadioLabel {
+  margin-left: 15px;
+}
+.fieldInput {
+  float: right;
+  width: 250px;
+  text-align: center;
+  border: 3px solid;
+  border-color: #412902;
+  border-radius: 15px;
+  font-weight: bold;
+  outline-style: none;
+}
+.radioInput {
+  float: right;
+  margin-top: 10px;
+}
+.alignCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.editandsendbuttons {
+  margin-bottom: 50px;
+  margin-top: 20px;
+  padding: 5px 20px 5px 20px;
+  border: 3px solid;
+  border-color: #412902;
+  border-radius: 15px;
+  font-weight: bold;
+  outline-style: none;
+}
+#viewQuery {
+  margin-bottom: 50px;
+  margin-top: 20px;
+  padding: 5px 20px 5px 20px;
+  border: 3px solid;
+  border-color: #412902;
+  border-radius: 15px;
+  font-weight: bold;
+  outline-style: none;
+}
+#viewQuery:hover,
+.editandsendbuttons:hover {
+  background-color: #412902;
+}
+#viewQuery:active,
+.editandsendbuttons:active {
+  background-color: black;
+  color: white;
+  border-color: white;
+}
+.querySummary {
+  padding: 20px;
+  width: 40%;
+  margin: auto;
+  margin-top: 50px;
+  background: #f2d7ab;
+  display: grid;
+  grid-template-columns: max-content auto;
+  border-radius: 10px;
+}
+/* ------------------------------------------------------Query Form End------------------------------------------------------------ */
+/* --------------------------------------------------------QUIZ------------------------------------------------------------ */
+.start {
+  margin: 0 auto;
+  padding: 0 10px;
+  width: 940px;
+  padding-bottom: 5px;
+}
+#quizpage {
+  height: 580px;
+  padding-top: 1px;
+  background-image: url("Photos/bckgrnd.jpg");
+  background-size: cover;
+  background-color: #e8eced;
+  text-align: center;
+}
+#quizpage h2 {
+  color: #f2d7ab;
+  margin: 180px 0 40px 0;
+  font-weight: 600;
+}
+.quizbutton {
+  display: block;
+  text-align: center;
+  background: #412902;
+  border-radius: 3px;
+  color: #f2d7ab;
+  width: 360px;
+  height: 100px;
+  font-size: 40px;
+  line-height: 100px;
+  margin: 0 auto;
+}
+.quizbutton:hover {
+  background-color: #f2d7ab;
+  color: #412902;
+  text-decoration: none;
+}
+/* ------------------------------------------------------QUIZ End------------------------------------------------------------ */
+/* --------------------------------------------------------Students Details------------------------------------------------------------ */
+.student-body {
+  background: #fefefe;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  font-family: lobster;
+}
+.head-title {
+  width: 50%;
+  height: 100px;
+  text-align: center;
+  margin: 0 25%;
+  border-bottom: 1px solid #412902;
+  display: block;
+}
+.head-title .title-page {
+  padding: 5px;
+  color: #412902;
+  font-weight: 700;
+}
+.head-title .subtitle {
+  color: brown;
+}
+.head-title .subtitle a {
+  color: #412902;
+  transition: 0.3s linear;
+}
+.head-title .subtitle a:hover {
+  color: #f5a623;
+  text-decoration: none;
+}
+.container1 {
+  width: 950px;
+  height: 400px;
+  margin: 5% auto;
+}
+.container1 .image {
+  background: #f3f2f6;
+  width: 275px;
+  height: 350px;
+  margin: 1% 1.5%;
+  border-radius: 10px;
+  float: left;
+  position: relative;
+  box-shadow: 0px 0px 10px #f2d7ab;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+  border-radius: 20px;
+}
+.container1 .image:hover {
+  box-shadow: 5px 5px 5px rgb(255, 255, 255);
+}
+.container1 .image .pic-item {
+  width: 100%;
+  height: 90%;
+  position: relative;
+  margin: auto;
+  border-radius: 20px;
+}
+.container1 .image .description {
+  background: #f2d7ab;
+  width: 100%;
+  height: 40%;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  position: relative;
+  border-radius: 10px;
+}
+ul {
+  list-style-type: none;
+}
+.container1 .image .description .name {
+  width: 100%;
+  font-family: "Oxygen", sans-serif;
+  font-size: 1em;
+  text-align: center;
+  color: brown;
+  top: 10%;
+  left: 0%;
+  display: block;
+  position: absolute;
+}
+.container1 .image .description .number {
+  width: 100%;
+  font-family: "Oxygen", sans-serif;
+  font-size: 1em;
+  text-align: center;
+  color: brown;
+  top: 40%;
+  left: 0%;
+  display: block;
+  position: absolute;
+}
+
+.container1 .image .description .click {
+  width: 100%;
+  font-family: "Oxygen", sans-serif;
+  font-size: 1em;
+  text-align: center;
+  color: brown;
+  top: 80%;
+  left: 0%;
+  display: block;
+  position: absolute;
+}
+.container1 .selected {
+  height: 350px;
+  top: -25px;
+}
+/* ------------------------------------------------------Students Details------------------------------------------------------------ */
+/* --------------------------------------------------------Footer---------------------------------------------------------------- */
+.footer1 {
+  background: #412902;
+  color: #f2d7ab;
+  height: 250px;
+  position: relative;
+  opacity: 97%;
+}
+.footer1 .footer-content {
+  border: 1px black;
+  height: 250px;
+  display: flex;
+}
+.footer1 .footer-content .footer-section {
+  flex: 1;
+}
+.footer1 .footer-bottom {
+  background: #f2d7ab;
+  color: #412902;
+  height: 40px;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  padding-top: 0px;
+}
+.flinks {
+  text-align: center;
+  list-style: none;
+  color: white;
+  font-size: 12px;
+  text-decoration: none;
+  letter-spacing: 1px;
+  padding: 4px 5px;
+}
+.flinks a:hover {
+  background-color: #412902;
+  color: #f2d7ab;
+}
+.ftopics {
+  text-align: center;
+  margin-top: 12px;
+  font-size: 12px;
+  color: #f2d7ab;
+}
+#footer-text {
+  text-align: center;
+  list-style: none;
+  color: #f2d7ab;
+  font-size: 16px;
+  text-decoration: none;
+  letter-spacing: 1px;
+  padding: 4px 5px;
+  opacity: 50%;
+  margin-left: 20px;
+  margin-top: 100px;
+}
+#footer-bottom-text {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #412902;
+}
+#footer-head {
+  margin-top: 30px;
+  margin-left: 40px;
+  color: #f2d7ab;
+  font-family: lobster;
+}
+/* ------------------------------------------------------Footer End-------------------------------------------------------------- */

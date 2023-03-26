@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chess Quiz!</title>
+    <link rel="icon" href="Photos/ChessLogo.jpg" type="Photos/JPG">
+	<link href="quiz.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <script src="quiz.js"></script>
+
+</head>
+
+
+<body>
+    <div class="quiz-body" id="quizpage">
+        <h1 class="title-page">Let's test your knowledge in chess!</h1>
+
+<div>
+        <form id="quiz" name="quiz">
+
+            <div class="questions" id="1">
+                <p class="headline">1. How many squares does a chessboard have?</p>
+
+                <input type="radio" class="options" id="1amc" name="question1" value="65">
+                <label for="1amc">A) 65 </label>
+                <br>
+                <input type="radio" class="options" id="1bmc" name="question1" value="32">
+                <label for="1bmc">B) 32 </label>
+                <br>
+                <input type="radio" class="accurate" id="cmc1" name="question1" value="64">
+                <label for="cmc1" id="l1cmc">C) 64 </label>
+                <br>
+                <input type="radio"  class="options" id="1dmc" name="question1" value="99">
+                <label for="1dmc"> D) 99 </label>
+                <br>
+            </div>
+            <div class="questions" id="2">
+                <p class="headline">2. Who were the opponents in the famous Evergreen Game?</p>
+
+                <input type="radio" class="accurate" id="cmc2" name="question2" value="AdolfVsJean">
+                <label for="cmc2" id="l2cmc"> A) Adolf Anderssen vs. Jean Dufresne</label>
+                <br>
+                <input type="radio" class="options" id="2bmc" name="question2" value="PaulVsHoward">
+                <label for="2bmc"> B) Paul Morphy vs. Howard Staunton</label>
+                <br>
+                <input type="radio" class="options" id="2cmc" name="question2" value="WilhelmVsEmanuel">
+                <label for="2cmc"> C) Wilhelm Steinitz vs. Emanuel Lasker</label>
+                <br>
+                <input type="radio" class="options" id="2dmc" name="question2" value="JoseVsAlexander">
+                <label for="2dmc"> D) Jose Raul Capablanca vs. Alexander Alekhine</label>
+                <br>
+            </div>
+            <div class="questions" id="3">
+                <p class="headline">3. What is it called when a player can't defend an attack against their king?</p>
+
+                <input type="radio" class="options" id="3amc" name="question3" value="Check">
+                <label for="3amc"> A) Check</label>
+                <br>
+                <input type="radio" class="options" id="3bmc" name="question3" value="Chess">
+                <label for="3bmc"> B) Chess</label>
+                <br>
+                <input type="radio" class="options" id="3cmc" name="question3" value="Checkchess">
+                <label for="3cmc">C) Checkchess</label>
+                <br>
+                <input type="radio" class="accurate" id="cmc3" name="question3" value="Checkmate">
+                <label for="cmc3" id="l3cmc"> D) Checkmate</label>
+                <br>
+
+
+            </div>
+            <div class="questions" id="4">
+                <p class="headline">4. Where did chess originate?</p>
+
+                <input type="radio" class="accurate" id="cmc4" name="question4" value="India">
+                <label for="cmc4" id="l4cmc"> A) India</label>
+                <br>
+                <input type="radio" class="options" id="4bmc" name="question4" value="Russia">
+                <label for="4bmc"> B) Russia</label>
+                <br>
+                <input type="radio" class="options" id="4cmc" name="question4" value="Italy">
+                <label for="4cmc">C) Italy</label>
+                <br>
+                <input type="radio" class="options" id="4dmc" name="question4" value="France">
+                <label for="4dmc">D) France</label>
+                <br>
+
+
+            </div>
+            <div class="questions" id="5">
+                <p class="headline">5. What does the word “checkmate”/“shah mat” mean in Persian?</p>
+
+                <input type="radio" class="options" id="5amc" name="question5" value="alone">
+                <label for="5amc">A) King is alone</label>
+                <br>
+                <input type="radio" class="options" id="5bmc" name="question5" value="hopeless">
+                <label for="5bmc"> B) King is hopeless</label>
+                <br>
+                <input type="radio" class="options" id="5cmc" name="question5" value="help">
+                <label for="5cmc">C) King needs help</label>
+                <br>
+                <input type="radio" class="accurate" id="cmc5" name="question5" value="dead">
+                <label for="cmc5" id="l5cmc"> D) King is dead</label>
+                <br>
+
+
+            </div>
+            <div class="questions" id="6">
+                <p class="headline">6. What is the name of the rating system that measures a player’s strength?</p>
+
+                <input type="radio" class="options" id="6amc" name="question6" value="Ela">
+                <label for="6amc"> A) Ela</label>
+                <br>
+                <input type="radio" class="accurate" id="cmc6" name="question6" value="Elo">
+                <label for="cmc6" id="l6cmc"> B) Elo</label>
+                <br>
+                <input type="radio" class="options" id="6cmc" name="question6" value="Alo">
+                <label for="6cmc"> C) Alo</label>
+                <br>
+                <input type="radio" class="options" id="6dmc" name="question6" value="Filo">
+                <label for="6dmc"> D) Filo</label>
+                <br>
+
+
+            </div>
+            <div class="questions" id="7">
+                <p class="headline">7. What determines which player starts first in a chess game?</p>
+
+                <input type="radio" class="options" id="7amc" name="question7" value="Coin">
+                <label for="7amc">A) Coin flip</label>
+                <br>
+                <input type="radio" class="options" id="7bmc" name="question7" value="first">
+                <label for="7bmc"> B) Whoever comes first to the board</label>
+                <br>
+                <input type="radio" class="options" id="7cmc" name="question7" value="black">
+                <label for="7cmc"> C) The player with the black pieces always goes first</label>
+                <br>
+                <input type="radio" class="accurate" id="cmc7" name="question7" value="white">
+                <label for="cmc7" id="l7cmc"> D) The player with the white pieces always goes first</label>
+                <br>
+
+
+            </div>
+            <div class="questions" id="8">
+                <p class="headline">8. The folding chessboard was invented by?</p>
+
+                <input type="radio" class="options" id="8amc" name="question8" value="librarian">
+                <label for="8amc"> A) A librarian</label>
+                <br>
+                <input type="radio" class="accurate" id="cmc8" name="question8" value="priest">
+                <label for="cmc8" id="l8cmc"> B) A priest</label>
+                <br>
+                <input type="radio" class="options" id="8cmc" name="question8" value="accountant">
+                <label for="8cmc"> C) An accountant</label>
+                <br>
+                <input type="radio" class="options" id="8dmc" name="question8" value="lawyer">
+                <label for="8dmc"> D) A lawyer</label>
+                <br>
+
+
+            </div>
+            <div class="questions" id="9">
+                <p class="headline">9. The quickest possible checkmate is in:</p>
+
+                <input type="radio" class="accurate" id="cmc9" name="question9" value="2">
+                <label for="cmc9" id="l9cmc">A) 2 moves</label>
+                <br>
+                <input type="radio" class="options" id="9bmc" name="question9" value="1">
+                <label for="9bmc"> B) 1 move</label>
+                <br>
+                <input type="radio" class="options" id="9cmc" name="question9" value="3">
+                <label for="9cmc"> C) 3 moves</label>
+                <br>
+                <input type="radio" class="options" id="9dmc" name="question9" value="4">
+                <label for="9dmc">D) 4 moves</label>
+                <br>
+
+
+            </div>
+            <div class="questions" id="10">
+                <p class="headline">10. How many moves was the longest [known] chess game in history?</p>
+
+                <input type="radio" class="options" id="10amc" name="question10" value="101">
+                <label for="10amc"> A) 101</label>
+                <br>
+                <input type="radio" class="options" id="10bmc" name="question10" value="231">
+                <label for="10bmc"> B) 231</label>
+                <br>
+                <input type="radio" class="accurate" id="cmc10" name="question10" value="269">
+                <label for="cmc10" id="l10cmc"> C) 269</label>
+                <br>
+                <input type="radio" class="options" id="10dmc" name="question10" value="382">
+                <label for="10dmc"> D) 382</label>
+                <br>
+            </div>
+
+            <input id="button" type="button" value="Done!" onclick="check(form);">
+
+            <div id="tab">
+                <p>Time Left: </p>
+                <div id="quiz-time-left">
+
+                </div>
+            </div>
+
+
+        </form>
+
+
+
+    </div>
+    <div id="after_submit">
+        <p id="correct"></p>
+        <p id="time"></p>
+        <p id="marks"></p>
+        <a class="backbutton" href="../index.html" >Back to the Site</a>
+    </div>
+
+
+
+    </div>
+</body>
+
+</html>
